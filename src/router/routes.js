@@ -11,6 +11,8 @@ const Maps = () => import(/* webpackChunkName: "common" */ "@/pages/Maps.vue");
 const Typography = () => import(/* webpackChunkName: "common" */ "@/pages/Typography.vue");
 const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableList.vue");
 const Accomodations = () => import(/* webpackChunkName: "common" */ "@/pages/Accomodations.vue");
+const Contracts = () => import(/* webpackChunkName: "common" */ "@/pages/Contracts.vue");
+
 
 const routes = [
   {
@@ -57,7 +59,13 @@ const routes = [
         path: "accomodations",
         name: "accomodations",
         component: Accomodations
-      }
+      },
+      {
+        path: "contracts",
+        name: "contracts",
+        component: Contracts
+      },
+      
     ]
   },
   { path: "*", component: NotFound },
