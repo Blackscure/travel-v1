@@ -12,6 +12,7 @@ const Typography = () => import(/* webpackChunkName: "common" */ "@/pages/Typogr
 const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableList.vue");
 const Accomodations = () => import(/* webpackChunkName: "common" */ "@/pages/Accomodations.vue");
 const Contracts = () => import(/* webpackChunkName: "common" */ "@/pages/Contracts.vue");
+const  Agents = () => import(/* webpackChunkName: "common" */ "@/pages/Agents.vue");
 
 
 const routes = [
@@ -65,6 +66,12 @@ const routes = [
         name: "contracts",
         component: Contracts
       },
+      {
+        path: "agents",
+        name: "agents",
+        component: Agents
+      },
+
       
     ]
   },
