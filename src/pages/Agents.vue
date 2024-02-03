@@ -4,10 +4,10 @@
       <div class="col-12">
         <div class="row">
           <div class="col-md-6 text-left">
-            <button type="button" class="btn btn-default">Default (Left)</button>
+            <button type="button" class="btn btn-default">Back</button>
           </div>
           <div class="col-md-6 text-right">
-            <button type="button" class="btn btn-default">Default (Right)</button>
+            <button type="button" class="btn btn-default">Add</button>
           </div>
         </div>
       </div>
