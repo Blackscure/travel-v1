@@ -4,7 +4,7 @@
       <div class="col-12">
         <div class="row">
           <div class="col-md-6 text-left">
-            <button type="button" class="btn btn-default">Default (Left)</button>
+            <router-link to="/" class="btn btn-default">Home</router-link>
           </div>
           <div class="col-md-6 text-right">
             <router-link to="/create-agent" class="btn btn-default">Add</router-link>
