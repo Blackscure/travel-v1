@@ -14,6 +14,7 @@ const Accomodations = () => import(/* webpackChunkName: "common" */ "@/pages/Acc
 const Contracts = () => import(/* webpackChunkName: "common" */ "@/pages/Contracts.vue");
 const  Agents = () => import(/* webpackChunkName: "common" */ "@/pages/Agents.vue");
 const  CreateAgent = () => import(/* webpackChunkName: "common" */ "@/pages/CreateAgent.vue");
+const  CreateAccomodation = () => import(/* webpackChunkName: "common" */ "@/pages/CreateAccomodation.vue");
 
 
 
@@ -79,6 +80,12 @@ const routes = [
         name: "create agent",
         component: CreateAgent
       },
+
+      {
+        path: "create-accomodations",
+        name: "create accomodation",
+        component: CreateAccomodation
+      }
 
 
     ]

@@ -7,7 +7,7 @@
             <router-link to="/" class="btn btn-default">Home</router-link>
           </div>
           <div class="col-md-6 text-right">
-            <router-link to="/create-agent" class="btn btn-default">Add Accomodations</router-link>
+            <router-link to="/create-accomodations" class="btn btn-default">Add Accomodations</router-link>
           </div>
         </div>
       </div>
