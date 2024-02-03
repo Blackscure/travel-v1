@@ -7,12 +7,16 @@
             <button type="button" class="btn btn-default">Back</button>
           </div>
           <div class="col-md-6 text-right">
-            <button type="button" class="btn btn-default">Add</button>
+            <b-button v-b-modal.modal-lg variant="primary">lg modal</b-button>
           </div>
         </div>
       </div>
     </div>
-    
+
+    <div class="">
+      <b-modal id="modal-lg" size="lg" title="Large Modal">Hello Large Modal!</b-modal>
+    </div>
+
 
     <div class="row">
       <div class="col-12">
