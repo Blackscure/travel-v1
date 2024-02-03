@@ -13,6 +13,8 @@ const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableLi
 const Accomodations = () => import(/* webpackChunkName: "common" */ "@/pages/Accomodations.vue");
 const Contracts = () => import(/* webpackChunkName: "common" */ "@/pages/Contracts.vue");
 const  Agents = () => import(/* webpackChunkName: "common" */ "@/pages/Agents.vue");
+const  CreateAgent = () => import(/* webpackChunkName: "common" */ "@/pages/CreateAgent.vue");
+
 
 
 const routes = [
@@ -72,7 +74,13 @@ const routes = [
         component: Agents
       },
 
-      
+      {
+        path: "create-agent",
+        name: "create agent",
+        component: CreateAgent
+      },
+
+
     ]
   },
   { path: "*", component: NotFound },

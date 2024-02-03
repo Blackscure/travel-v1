@@ -4,19 +4,14 @@
       <div class="col-12">
         <div class="row">
           <div class="col-md-6 text-left">
-            <button type="button" class="btn btn-default">Back</button>
+            <button type="button" class="btn btn-default">Default (Left)</button>
           </div>
           <div class="col-md-6 text-right">
-            <b-button v-b-modal.modal-lg variant="primary">lg modal</b-button>
+            <router-link to="/create-agent" class="btn btn-default">Add</router-link>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="">
-      <b-modal id="modal-lg" size="lg" title="Large Modal">Hello Large Modal!</b-modal>
-    </div>
-
 
     <div class="row">
       <div class="col-12">
