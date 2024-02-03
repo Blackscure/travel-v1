@@ -7,7 +7,7 @@
             <button type="button" class="btn btn-default">Default (Left)</button>
           </div>
           <div class="col-md-6 text-right">
-            <button type="button" class="btn btn-default">Default (Right)</button>
+            <router-link to="/create-agent" class="btn btn-default">Add</router-link>
           </div>
         </div>
       </div>
