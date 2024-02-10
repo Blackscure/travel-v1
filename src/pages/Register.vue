@@ -8,13 +8,6 @@
               <h5 class="card-title mb-4">Register</h5>
               <form>
                 <div class="mb-3">
-                  <label htmlFor="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" v-model="name" />
-                  <div v-if="validationErrors.name" class="flex flex-col">
-                    <small class="text-danger">{{validationErrors?.name[0]}}</small>
-                  </div>
-                </div>
-                <div class="mb-3">
                   <label htmlFor="email" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="email" name="email" v-model="email" />
                   <div v-if="validationErrors.email" class="flex flex-col">
