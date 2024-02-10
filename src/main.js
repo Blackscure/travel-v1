@@ -20,6 +20,12 @@ Vue.use(VueRouter);
 Vue.use(RouterPrefetch);
 Vue.use(BootstrapVue);
 
+axios.defaults.baseURL = process.env.VUE_APP_API_URL
+axios.interceptors.request.use(function (config) {
+  config.headers['X-Binarybox-Api-Key'] = process.env.VUE_APP_API_KEY;
+  return config;
+});
+
 
 const routes = [
   { path: '/create-agent', component: CreateAgent },
