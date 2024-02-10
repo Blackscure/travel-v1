@@ -4,23 +4,29 @@ import NotFound from "@/pages/NotFoundPage.vue";
 
 // Admin pages
 const Dashboard = () => import(/* webpackChunkName: "dashboard" */"@/pages/Dashboard.vue");
-const Profile = () => import(/* webpackChunkName: "common" */ "@/pages/Profile.vue");
-const Notifications = () => import(/* webpackChunkName: "common" */"@/pages/Notifications.vue");
-const Icons = () => import(/* webpackChunkName: "common" */ "@/pages/Icons.vue");
-const Maps = () => import(/* webpackChunkName: "common" */ "@/pages/Maps.vue");
-const Typography = () => import(/* webpackChunkName: "common" */ "@/pages/Typography.vue");
-const TableList = () => import(/* webpackChunkName: "common" */ "@/pages/TableList.vue");
 const Accomodations = () => import(/* webpackChunkName: "common" */ "@/pages/Accomodations.vue");
 const Contracts = () => import(/* webpackChunkName: "common" */ "@/pages/Contracts.vue");
 const  Agents = () => import(/* webpackChunkName: "common" */ "@/pages/Agents.vue");
 const  CreateAgent = () => import(/* webpackChunkName: "common" */ "@/pages/CreateAgent.vue");
 const  CreateAccomodation = () => import(/* webpackChunkName: "common" */ "@/pages/CreateAccomodation.vue");
 const  CreateContract = () => import(/* webpackChunkName: "common" */ "@/pages/CreateContract.vue");
+const  Login = () => import(/* webpackChunkName: "common" */ "@/pages/Login.vue");
 
 
 const routes = [
   {
     path: "/",
+    redirect: "/login", // Redirect to the login page by default
+  },
+
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+
+  {
+    path: "/dashboard",
     component: DashboardLayout,
     redirect: "/dashboard",
     children: [
@@ -29,36 +35,9 @@ const routes = [
         name: "dashboard",
         component: Dashboard
       },
-      {
-        path: "profile",
-        name: "profile",
-        component: Profile
-      },
-      {
-        path: "notifications",
-        name: "notifications",
-        component: Notifications
-      },
-      {
-        path: "icons",
-        name: "icons",
-        component: Icons
-      },
-      {
-        path: "maps",
-        name: "maps",
-        component: Maps
-      },
-      {
-        path: "typography",
-        name: "typography",
-        component: Typography
-      },
-      {
-        path: "table-list",
-        name: "table-list",
-        component: TableList
-      },
+
+
+
       {
         path: "accomodations",
         name: "accomodations",

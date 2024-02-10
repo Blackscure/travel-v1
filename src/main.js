@@ -6,11 +6,13 @@ import BootstrapVue from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 // TIP: change to import router from "./router/starterRouter"; to start with a clean layout
+import axios from "axios";
 import router from "./router/index";
 import CreateAgent from '../src/pages/CreateAgent.vue';
 import CreateAccomodation from '../src/pages/CreateAccomodation.vue';
 import CreateContract from '../src/pages/CreateContract.vue';
 import Login from '../src/pages/Login.vue';
+import Register from '../src/pages/Register.vue';
 
 import BlackDashboard from "./plugins/blackDashboard";
 import i18n from "./i18n"
@@ -32,6 +34,7 @@ const routes = [
   { path: '/create-accomodation', component:  CreateAccomodation },
   { path: '/create-contract', component:  CreateContract },
   { path: '/login', component:  Login },
+  { path: '/Register', component:  Register },
   // Add other routes as needed
 ];
 
